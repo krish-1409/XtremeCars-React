@@ -18,7 +18,10 @@
     padding: 0.75%;
 }
 .search-bar{
-    color: white;
+    position: absolute;
+    top: 55%;
+    width: 33%;
+    left: 33%;
 }
 
 img{

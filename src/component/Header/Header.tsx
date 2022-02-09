@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Header.css";
-
+import Logo from "./Union.png"
 
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
       
           <div style={{ flexGrow: '1' }}>
           <Link className='top-bar-links' to="/">
-            <img src="Union.png" alt="/" /><span style={{ fontWeight: 'lighter'}}>XTREME</span><span style={{ fontWeight:'bolder' }}>CARS</span>
+            <img src={ Logo } alt="/" className='logo'/><span style={{ fontWeight: 'lighter'}}>XTREME</span><span style={{ fontWeight:'bolder' }}>CARS</span>
           </Link>
           </div>
           <div style={{ flexGrow: '2' }} className='top-bar-center'>
