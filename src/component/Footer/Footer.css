@@ -7,8 +7,8 @@
 
 .footer-container > div{
     width: 18%;
-    height: 26em;
-    margin: 6em 1.5em;
+    height: 23em;
+    margin: 6em 1.5em 4em 1.5em;
     
 }
 
@@ -32,3 +32,10 @@
 .xtremecars a{
     text-decoration: none;
 }
+
+a:hover{
+    /* text-decoration: underline; */
+    border-bottom: 1px solid white;
+    transition: 1s;
+}
+
