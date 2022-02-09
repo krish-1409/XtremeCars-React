@@ -45,8 +45,8 @@ const Header = () => {
           </Link>
           
       </div>
-      
-      <div className='type' style={{ color:'white', fontSize:'15px' }}>BODY TYPE</div>
+  
+      <div className='type' style={{ color:'#A0A0A0', fontSize:'15px', marginTop:"0.6%" }}>BODY TYPE</div>
       </div>
       
 
