@@ -1,0 +1,34 @@
+.footer-container{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.footer-container > div{
+    width: 18%;
+    height: 26em;
+    margin: 6em 1.5em;
+    
+}
+
+.connect img{
+    width: 20%;
+    margin: 3%;
+}
+
+.legal a{
+    text-decoration: none;
+    font-size: 115%;
+    color: white;
+}
+
+.contact a{
+    text-decoration: none;
+    font-size: 115%;
+    color: white;
+}
+
+.xtremecars a{
+    text-decoration: none;
+}

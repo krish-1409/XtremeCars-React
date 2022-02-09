@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./component/Header/Header";
 import MainPage from "./component/Main Page/MainPage";
+import Footer from "./component/Footer/Footer";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -12,6 +13,7 @@ const App = () => {
       <div className="App">
         <Header />
         <MainPage/>
+        <Footer />
 
       </div>
     </BrowserRouter>
