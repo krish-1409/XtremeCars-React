@@ -48,7 +48,7 @@ const Header = () => {
       
       <div className='type' style={{ color:'white', fontSize:'15px' }}>BODY TYPE</div>
       </div>
-      <div className="divider"/>
+      
 
       
     </div>
