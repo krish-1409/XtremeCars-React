@@ -1,0 +1,114 @@
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
+
+.header-container {
+    /* font: normal 18px "Open Sans", sans-serif; */
+    text-align: center;
+    margin: 0px 0px;
+}
+
+.header-title {
+    font: normal 3em "Playfair Display SC";
+    margin: 0px;
+    width: 100%;
+    min-height: 72px;
+    color: white;
+
+    background: #000000;
+
+    display: flex;
+    align-items: stretch;
+    flex-grow: 0;
+    
+}
+.header-title > div {
+    text-align: center;
+}
+
+.top-bar-center div{
+    /* font-size: 20px; */
+    /* margin: auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: inline;
+}
+.top-bar-links{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.tab-items-container-main{
+    background: #383838;
+    text-align: center;
+    min-height: 85px;
+}
+
+.tab-items-container {
+    max-width: 50%;
+    /* height: 113px; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* background: url(frosted-glass-texture-as-background-frosted-glass-texture-as-background-interior-design-decoration-111091129.jpg), rgba(255, 250, 250, 0.07); */
+    /* background: #383838; */
+    
+    
+}
+
+.tab-item {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    padding-bottom: 0;
+    
+}
+
+
+
+.tab-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    height: 2px;
+    transform: scaleX(0);
+    background: white;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+.tab-item:hover::after {
+    transform: scaleX(0.5);
+}
+
+.tab-item:focus {
+    font-weight: bold;
+    color: #F0F0F0;
+    /* border-bottom: 1px solid white; */
+}
+
+.divider {
+    
+    background-color: white;
+    height: 1px;
+    
+}
+
+.tab-item{
+    color: #C8C8C8;
+    text-decoration-line: none;
+}
+
+/* .type{
+    font-size: 15px;
+    text-align: center;
+    background: #383838 ;
+    color: white;
+    height: 20%;
+
+} */
