@@ -29,7 +29,7 @@ const Listcars = (props:any) => {
   return (
     <div className='cars-container'>
     { 
-        // cars.map((car)=>(<Carcard details={car} />))
+        cars.map((car)=>(<Carcard details={car} />))
         
     }
     </div>

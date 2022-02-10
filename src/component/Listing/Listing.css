@@ -50,26 +50,30 @@
     background-color: black;
 }
 
-
-
-
-
-
 .cars-container{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
+    padding: 2% 0;
 }
 
 .card{
     width: 20%;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
     margin: 1%;
 }
 
 .card-car-name{
     padding: 0.5% 0 1% 2%;
+
 }
 
-/* .card-car-price */
+.card-car-price{
+    padding: 0.5% 0 1% 2%;
+}
+
+
+.card img{
+    height: 68%;
+}
