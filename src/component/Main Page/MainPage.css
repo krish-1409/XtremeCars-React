@@ -40,7 +40,8 @@
     color: antiquewhite;
     font-size: 20px;
     box-shadow: 0 0 25px 0 crimson,
-                0 20px 25px 0 rgba(0, 0, 0, 0.2);
+0 20px 25px 0 rgba(0, 0, 0, 0.2);
+   
 
 }
 .search-box:focus{
@@ -69,3 +70,10 @@ img{
     height: auto;
     overflow-y: none;
 }
+
+
+
+
+
+
+

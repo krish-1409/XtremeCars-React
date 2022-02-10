@@ -9,7 +9,7 @@ import Instagram_logo from './instagram.png'
 const Footer = () => {
   return (
     <div className="footer-container">
-        <div className="contact">
+        <div className="contact link-hover">
             <h3>Contact:</h3>
             {"-> "}<a href="/">Request a Test Drive</a><br/>
             {"-> "}<a href="/">Book Car</a><br/>
@@ -26,7 +26,7 @@ const Footer = () => {
 
         </div>
 
-        <div className="legal">
+        <div className="legal link-hover">
             <h3>Legal:</h3>
             {"-> "}<a href="/">Legal Disclaimer / Imprint </a><br/>
             {"-> "}<a href="/">Privacy Policy</a><br/>

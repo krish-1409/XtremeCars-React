@@ -1,0 +1,52 @@
+.listing-container{
+        width: 94%;
+        min-height: 500px;
+        margin: auto;
+        /* background-color: aquamarine; */
+}
+
+.listing-title{
+    padding-top: 2.5%;
+    font-size: 2em;
+}
+
+
+
+.list-categories{
+    padding-left: 1%;
+    width: auto;
+    margin-top: 5%;
+}
+
+.list-categories li{
+    display: inline;
+    /* padding: 3%; */
+    text-align: center;
+    background-color: #F5F5F5;
+    color: black;
+
+}
+
+/* .list-categories li:hover{
+    display: inline;
+    padding: 3%;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+} */
+
+
+.category-link{
+    text-decoration: none;
+    width: auto;
+    padding: 1.15% 2.5%;
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.category-link:hover{
+    color: white;
+    background-color: black;
+}
+
