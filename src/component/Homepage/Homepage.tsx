@@ -7,12 +7,14 @@ import Sedan from '../Listing/Containers/Sedan'
 import Suv from '../Listing/Containers/Suv'
 import Coupe from '../Listing/Containers/Coupe'
 import Hatchback from '../Listing/Containers/Hatchback'
+import Header2 from '../Header/Header2'
 
 
 const Homepage = () => {
   return (
       
     <div>
+        <Header2/>
         <MainPage/>
         <Listing />
 
