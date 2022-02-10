@@ -14,7 +14,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Homepage from "./component/Homepage/Homepage";
 
 const App = () => {
-  //this is just for demo purpose, change this router as per your requirement
+  
   return (
     <BrowserRouter>
       <div className="App">
@@ -28,10 +28,15 @@ const App = () => {
         <Route path="/suv" component={ Suv }/>
         <Route path="/hatchback" component={ Hatchback }/>
         <Route path="/coupe" component={ Coupe }/>
-        <Route path="/details" component={ Details }/>
-      </Switch> */}
-      <Homepage/>
-
+      </Switch>
+     */}
+      <Switch>
+        <Route exact path="/" component={ Homepage } />
+        <Route path="/view-all" component={ Homepage } />
+        <Route path="/details" component={ Details } />
+        {/* <Route path="/booking" component={ Booking } /> */}
+        {/* <Homepage/> */}
+      </Switch>
         <Footer />
 
       </div>

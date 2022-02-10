@@ -11,7 +11,7 @@ import Hatchback from '../Listing/Containers/Hatchback'
 
 const Homepage = () => {
   return (
-      <BrowserRouter>
+      
     <div>
         <MainPage/>
         <Listing />
@@ -26,7 +26,7 @@ const Homepage = () => {
       </Switch>
     
     </div>
-    </BrowserRouter>
+    
   )
 }
 
