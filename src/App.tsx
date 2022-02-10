@@ -9,8 +9,9 @@ import Sedan from "./component/Listing/Containers/Sedan";
 import Suv from "./component/Listing/Containers/Suv";
 import Coupe from "./component/Listing/Containers/Coupe";
 import Hatchback from "./component/Listing/Containers/Hatchback";
+import Details from "./component/Details/Details";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
+import Homepage from "./component/Homepage/Homepage";
 
 const App = () => {
   //this is just for demo purpose, change this router as per your requirement
@@ -18,7 +19,7 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <MainPage/>
+        {/* <MainPage/>
         <Listing/>
       <Switch>
         <Route exact path="/" component={ Viewall }/>
@@ -27,8 +28,9 @@ const App = () => {
         <Route path="/suv" component={ Suv }/>
         <Route path="/hatchback" component={ Hatchback }/>
         <Route path="/coupe" component={ Coupe }/>
-      </Switch>
-    
+        <Route path="/details" component={ Details }/>
+      </Switch> */}
+      <Homepage/>
 
         <Footer />
 

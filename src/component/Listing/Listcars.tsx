@@ -19,11 +19,6 @@ const Listcars = (props:any) => {
       getdata();
   },[])
 
-  // const apicall = Axios.get(api+'/'+props.type,{ auth:credentials }).then((response)=>{
-  //   setCars(response.data)
-  // })
-
-
 
   console.log(cars)
   return (
