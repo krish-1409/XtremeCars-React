@@ -1,8 +1,11 @@
 import React from 'react'
+import Listcars from '../Listcars'
 
 const Coupe = () => {
   return (
-    <div>Coupe</div>
+    <div>
+        <Listcars type='coupe' />
+    </div>
   )
 }
 

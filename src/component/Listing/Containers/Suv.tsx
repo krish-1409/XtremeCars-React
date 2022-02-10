@@ -1,8 +1,13 @@
 import React from 'react'
+import Listcars from '../Listcars'
 
 const Suv = () => {
   return (
-    <div>Suv</div>
+    <div>
+      <Listcars type='SUV' />
+        
+        
+    </div>
   )
 }
 

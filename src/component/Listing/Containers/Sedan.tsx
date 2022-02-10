@@ -1,8 +1,14 @@
 import React from 'react'
-
+import Listcars from '../Listcars'
+import Carcard from '../Carcard'
 const Sedan = () => {
   return (
-    <div>Sedan</div>
+    <div>
+       
+        <Listcars type='sedan' />
+        
+        
+    </div>
   )
 }
 

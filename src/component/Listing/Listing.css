@@ -1,6 +1,6 @@
 .listing-container{
         width: 94%;
-        min-height: 500px;
+        /* min-height: 500px; */
         margin: auto;
         /* background-color: aquamarine; */
 }
@@ -50,3 +50,26 @@
     background-color: black;
 }
 
+
+
+
+
+
+.cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.card{
+    width: 20%;
+    box-shadow: 5px 10px 8px #888888;
+    margin: 1%;
+}
+
+.card-car-name{
+    padding: 0.5% 0 1% 2%;
+}
+
+/* .card-car-price */

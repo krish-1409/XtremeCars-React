@@ -1,8 +1,14 @@
 import React from 'react'
+import Listcars from '../Listcars'
 
 const Viewall = () => {
   return (
-    <div>Viewall</div>
+      
+    <div>
+      
+        <Listcars type='' />  
+    </div>
+    
   )
 }
 

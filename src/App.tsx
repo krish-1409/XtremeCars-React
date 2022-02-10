@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/hatchback" component={ Hatchback }/>
         <Route path="/coupe" component={ Coupe }/>
       </Switch>
-
+    
 
         <Footer />
 
