@@ -9,9 +9,8 @@ import Sedan from "./component/Listing/Containers/Sedan";
 import Suv from "./component/Listing/Containers/Suv";
 import Coupe from "./component/Listing/Containers/Coupe";
 import Hatchback from "./component/Listing/Containers/Hatchback";
-import Details from "./component/Details/Details";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Homepage from "./component/Homepage/Homepage";
+import Header2 from "./component/Header/Header2";
 
 const App = () => {
   
@@ -19,7 +18,8 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <Header />
-        {/* <MainPage/>
+        <Header2/>
+        <MainPage/>
         <Listing/>
       <Switch>
         <Route exact path="/" component={ Viewall }/>
@@ -29,14 +29,14 @@ const App = () => {
         <Route path="/hatchback" component={ Hatchback }/>
         <Route path="/coupe" component={ Coupe }/>
       </Switch>
-     */}
-      <Switch>
+    
+      {/* <Switch>
         <Route exact path="/" component={ Homepage } />
         <Route path="/view-all" component={ Homepage } />
         <Route path="/details" component={ Details } />
-        {/* <Route path="/booking" component={ Booking } /> */}
-        {/* <Homepage/> */}
-      </Switch>
+        <Route path="/booking" component={ Booking } />
+        <Homepage/>
+      </Switch> */}
         <Footer />
 
       </div>

@@ -3,6 +3,8 @@ import Carcard from './Carcard'
 import Axios from 'axios'
 import { useEffect } from 'react'
 import './Listcars.css'
+import { Route } from 'react-router-dom'
+import Details from '../Details/Details'
 
 const Listcars = (props:any) => {
   const api = 'https://hu-22-react-mockapi-urtjok3rza-wl.a.run.app/cars'
@@ -27,7 +29,9 @@ const Listcars = (props:any) => {
         cars.map((car)=>(<Carcard details={car} />))
         
     }
+    <Route path="/sedan/details" component={Details} />
     </div>
+    
   )
 }
 

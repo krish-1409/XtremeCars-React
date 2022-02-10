@@ -12,22 +12,23 @@ import Header2 from '../Header/Header2'
 
 const Homepage = () => {
   return (
-      
+      // <BrowserRouter>
     <div>
         <Header2/>
         <MainPage/>
         <Listing />
 
-    <Switch>
+    {/* <Switch> */}
         <Route exact path="/" component={ Viewall }/>
         <Route path="/view-all" component={ Viewall }/>
-        <Route path="/sedan" component={ Sedan }/>
+        <Route path="view-all/sedan" exact component={ Sedan }/>
         <Route path="/suv" component={ Suv }/>
         <Route path="/hatchback" component={ Hatchback }/>
         <Route path="/coupe" component={ Coupe }/>
-      </Switch>
+    {/* </Switch> */}
     
     </div>
+    // {/* </BrowserRouter> */}
     
   )
 }

@@ -1,0 +1,27 @@
+.details-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+
+.details-flex-container{
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+#details-inner-flex{
+    flex-grow: 1;
+}
+
+#details-inner-flex1{
+    flex-grow: 2;
+}
+
+.details-car-name
+{
+    font-size: 4em;
+    margin-bottom: 2%;
+
+}
