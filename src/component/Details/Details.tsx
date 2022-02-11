@@ -12,9 +12,8 @@ interface ParamTypes {
   }
 interface LocationTypes{
     state: object,
-    // CarID : object,
     carId : string
-    // carName : string
+    
 }
 const Details = () => {
     const { handle } = useParams<ParamTypes>()
@@ -29,24 +28,27 @@ const Details = () => {
   }
 
   
-    const [details,setDetails] = useState<any>({})
+    const [details,setDetails] = useState<object>({})
     const [car_name,setCarname] = useState<any>('')
     const [car_images,setCarimages] = useState<Array<any>>([])
     const [specifications,setSpecifications] = useState<Array<any>>([])
     const [exteriors,setExteriors] = useState<Array<any>>([])
     const [interiors,setInteriors] = useState<Array<any>>([])
     const [price,setPrice] = useState<Array<any>>([])
+    const [variants,setVariants] = useState<Array<string>>([])
 
     useEffect(()=>{
         async function getdetails(){
             const response = await Axios.get(api+'/'+carID.carId,{auth:credentials})
+            setDetails(response.data)
             setCarname(response.data.specifications.name)
             setCarimages([response.data.exterior.image,response.data.interior.image1,response.data.interior.image2])
             setSpecifications([response.data.specifications.fuel_type,response.data.specifications.engine_cc,response.data.specifications.torque,response.data.specifications.acceleration,response.data.specifications.top_speed,response.data.specifications.variant])
+            setVariants(response.data.specifications.variant)
             setExteriors([response.data.exterior.length,response.data.exterior.width,response.data.exterior.color])
             setInteriors([response.data.interior.text[0],response.data.interior.text[1]])
             setPrice(response.data.cost)
-            console.log(response.data)
+            // console.log(response.data)
           }
         getdetails();
     },[handle])
@@ -63,7 +65,8 @@ const Details = () => {
           <div id='details-inner-flex'>
           <div className="details-heading">
             Car <b>Specifications</b>
-            <Specification specs={specifications} />
+            <Specification specs={specifications} variant={variants}/>
+            {/* {variants.map((var)=>(<li>{var}</li>))} */}
           </div>
           </div>
       </div> 

@@ -3,6 +3,8 @@ import './right-flex.css'
 
 const Specification = (props:any) => {
     const specs = props.specs
+    const variants: Array<string> = props.variant
+    console.log(variants)
   return (
     <div>
         <div className="title">
@@ -45,7 +47,12 @@ const Specification = (props:any) => {
         </div>
         <div className="title-value">
             
-                {specs[5]}
+               
+                {
+                    specs[5]
+                    // variants.map((var:String)=>(<li></li>))
+                }
+
                 
             
             

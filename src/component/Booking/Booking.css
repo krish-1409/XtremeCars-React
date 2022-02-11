@@ -1,0 +1,38 @@
+.booking-container{
+    background-color: black;
+
+}
+
+.booking-flex-container{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.booking-inner-flex1{
+    flex-grow: 1;
+    height: 10em;
+    width: 1%;
+}
+
+.booking-inner-flex2{
+    flex-grow: 2.5;
+    
+    
+}
+.booking-header{
+    height: 4em;
+    background-color: white;
+}
+
+.details-container{
+    border: 1px solid black;
+    margin-top: 0;
+    width: 85%;
+}
+
+.form-container{
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;   
+}
