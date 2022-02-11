@@ -13,13 +13,13 @@
 
 #details-inner-flex{
     flex-grow: 1;
-    width: 40%;
+    width: 50%;
     margin-top: 1%;
 }
 
 #details-inner-flex1{
     flex-grow: 1;
-    width: 60%;
+    width: 50%;
     margin-top: 3%;
 }
 
@@ -37,5 +37,33 @@
 }
 
 #details-inner-flex1 img{
-    width: 40%;
+    width: 100%;
+}
+
+.book{
+    position: relative;
+    left: 30%;
+    top: -5%;
+    border: 1px solid red;
+    font-size: 1em;
+    padding: 1% 5%;
+    background-color: brown;
+    color: white;
+    margin-top: 1em;
+    /* border-radius: ; */
+    /* padding-bottom: 10px; */
+}
+.book-wrap{
+    height: 100%;
+    width: 50%;
+}
+.book-bottom{
+    margin-top: 10%;
+}
+
+.price{
+    margin-bottom: 10%;
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
 }
