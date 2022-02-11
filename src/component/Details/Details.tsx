@@ -19,8 +19,6 @@ const Details = () => {
     const { handle } = useParams<ParamTypes>()
     const location = useLocation<LocationTypes>()
     const  carID = location.state
-    
-    // console.log(carID.carId)
     const api = 'https://hu-22-react-mockapi-urtjok3rza-wl.a.run.app/cars/details'
     const credentials = {
       username: "Hasher",
@@ -48,7 +46,7 @@ const Details = () => {
             setExteriors([response.data.exterior.length,response.data.exterior.width,response.data.exterior.color])
             setInteriors([response.data.interior.text[0],response.data.interior.text[1]])
             setPrice(response.data.cost)
-            // console.log(response.data)
+            
           }
         getdetails();
     },[handle])
@@ -66,7 +64,7 @@ const Details = () => {
           <div className="details-heading">
             Car <b>Specifications</b>
             <Specification specs={specifications} variant={variants}/>
-            {/* {variants.map((var)=>(<li>{var}</li>))} */}
+            
           </div>
           </div>
       </div> 

@@ -37,7 +37,6 @@ const Featured = () => {
             </ul>
         </nav>
         </div>
-        {/* <div><Link to={{pathname:'/view-all'}} >View all<img src={ Arrow } alt="" className='view-arrow'/></Link></div> */}
        </div>
 
        

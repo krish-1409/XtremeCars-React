@@ -8,7 +8,7 @@
 .details-flex-container{
     display: flex;
     margin: auto;
-    /* text-align: center; */
+    
 }
 
 #details-inner-flex{
@@ -50,8 +50,7 @@
     background-color: brown;
     color: white;
     margin-top: 1em;
-    /* border-radius: ; */
-    /* padding-bottom: 10px; */
+    
 }
 .book-wrap{
     height: 100%;

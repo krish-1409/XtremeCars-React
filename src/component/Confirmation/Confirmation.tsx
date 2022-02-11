@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import Axios from'axios'
 import './confirmation.css'
 import BMW from './bmw.png'
 import BMW2 from './bmw2.png'
 import Black from './Black.png'
-import outline from './Outlined.png'
+
 
 interface ParamTypes{
   handle:string

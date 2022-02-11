@@ -11,7 +11,7 @@ const Homepage = () => {
     <div>
         <Header2/>
         <MainPage/>
-        {/* <CarLister/> */}
+       
         <Featured />
     
     </div>

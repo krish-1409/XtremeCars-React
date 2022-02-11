@@ -8,16 +8,12 @@
     margin: auto;
     background-color: white;
 }
-.booking-pass{
-    /* width:100%; */
-    /* margin: auto; */
-}
+
 .booking-pass-image{
     width: 20%;
     margin: auto;
     text-align: center;
     font-size: 120%;
-    /* font-weight: bold; */
     font-family: sans-serif;
 
 }
@@ -52,6 +48,3 @@
     color: white;
 }
 
-.explore-text:hover{
-    
-}

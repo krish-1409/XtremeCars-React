@@ -7,7 +7,7 @@ const Listcars = (props:any) => {
   
   const cars: any[] = props.cars
 
-  console.log(cars)
+  
   return (
     <div className='cars-container'>
     { 

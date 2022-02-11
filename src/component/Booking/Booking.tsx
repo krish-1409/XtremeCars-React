@@ -16,7 +16,6 @@ const  Booking= () => {
   const { handle } = useParams<ParamTypes>()
   const location = useLocation<LocationTypes>()
   const carID = location.state.carId
-  console.log(carID)
 
   const api = 'https://hu-22-react-mockapi-urtjok3rza-wl.a.run.app/cars/details'
     const credentials = {
@@ -31,7 +30,6 @@ const  Booking= () => {
     async function getdetails(){
         const response = await Axios.get(api+'/'+carID,{auth:credentials})
         
-        console.log(response.data)
         setImage(response.data.exterior.image)
         setName(response.data.specifications.name)
         setSpecifications([response.data.specifications.fuel_type,response.data.specifications.engine_cc])
@@ -39,7 +37,7 @@ const  Booking= () => {
     getdetails();
 },[handle])
   
-// console.log(img)
+
   return (
     <div className='booking-container'>
       <div className="booking-header"></div>
@@ -100,7 +98,7 @@ const  Booking= () => {
         </div>
         
       </div>
-      <Link to={{pathname:'/confirmation', state:{} }} > Confirm Booking</Link>
+    
       
     </div>
   )

@@ -1,6 +1,6 @@
 .booking-container{
     background-color: black;
-    /* height: 50em; */
+    
 }
 
 .booking-flex-container{
@@ -66,9 +66,7 @@
     padding-top: 3%;
 }
 
-input{
-    /* width: 60%; */
-}
+
 
 #input-bar{
     width:60%;

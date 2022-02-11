@@ -1,8 +1,7 @@
 .listing-container{
     width: 94%;
-    /* min-height: 500px; */
     margin: auto;
-    /* background-color: aquamarine; */
+    
 }
 
 .listing-title{
@@ -20,7 +19,6 @@ margin-top: 5%;
 
 .list-categories li{
 display: inline;
-/* padding: 3%; */
 text-align: center;
 background-color: #F5F5F5;
 color: black;
