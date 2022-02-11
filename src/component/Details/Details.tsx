@@ -2,6 +2,7 @@ import Axios  from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import './Details.css'
+import { Link } from 'react-router-dom'
 
 interface ParamTypes {
     handle: string
@@ -54,7 +55,7 @@ const Details = () => {
 
       <div className="details-flex-container">
           <div id='details-inner-flex1'>Five</div>
-          <div id='details-inner-flex'>Six</div>
+          <div id='details-inner-flex'><Link to={{pathname:'/booking', state:{carId: carID.carId}}} >Book Now</Link></div>
       </div>
         
     </div>

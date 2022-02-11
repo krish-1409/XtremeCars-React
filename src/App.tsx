@@ -5,6 +5,8 @@ import Footer from "./component/Footer/Footer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Homepage from "./component/Homepage/Homepage";
 import Details from "./component/Details/Details";
+import Booking from "./component/Booking/Booking";
+import Confirmation from "./component/Confirmation/Confirmation";
 
 const App = () => {
   
@@ -16,6 +18,8 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={ Homepage } />
           <Route path="/details" component={ Details } />
+          <Route path="/booking" component={ Booking } />
+          <Route path="/confirmation" component={ Confirmation } />
         </Switch>
         <Footer />
 
