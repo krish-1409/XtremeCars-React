@@ -90,6 +90,7 @@ const  Booking= () => {
                  <label htmlFor="terms"> I have read the terms and conditions</label>
                  <br/>
                   <br/>
+                  <input type="text" value={image} name='img_link' hidden/>
                  <input type="submit" value="submit" formAction='/confirmation'/><br/><br/>
               </form>
               
@@ -99,7 +100,7 @@ const  Booking= () => {
         </div>
         
       </div>
-      {/* <Link to={{pathname:'/confirmation', state:{} }} > Confirm Booking</Link> */}
+      <Link to={{pathname:'/confirmation', state:{} }} > Confirm Booking</Link>
       
     </div>
   )

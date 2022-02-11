@@ -1,0 +1,57 @@
+.booking-header{
+    height: 4em;
+    background-color: white;
+}
+
+.content-container{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+.booking-pass{
+    /* width:100%; */
+    /* margin: auto; */
+}
+.booking-pass-image{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    font-size: 120%;
+    /* font-weight: bold; */
+    font-family: sans-serif;
+
+}
+.sucess-info{
+    text-align: center;
+    margin-top: 3%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.confirmation-container{
+    background-color: black;
+}
+
+.explore-more{
+    width: 80%;
+    margin: auto;
+    margin-left: 20%;
+}
+.bmw{
+    width: 60%;
+}
+.black_bg{
+    width: 20%;
+}
+
+.explore-text{
+    width: fit-content;
+    position: absolute;
+    left: 66%;
+    bottom: 28%;
+    color: white;
+}
+
+.explore-text:hover{
+    
+}
