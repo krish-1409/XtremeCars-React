@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import './Details.css'
 import { Link } from 'react-router-dom'
+import Specification from './Specification'
 
 interface ParamTypes {
     handle: string
@@ -28,33 +29,48 @@ const Details = () => {
   
     const [details,setDetails] = useState<any>({})
     const [car_name,setCarname] = useState<any>('')
+    const [car_images,setCarimages] = useState<Array<any>>([])
+    const [specifications,setSpecifications] = useState<Array<any>>([])
+
     useEffect(()=>{
         async function getdetails(){
             const response = await Axios.get(api+'/'+carID.carId,{auth:credentials})
-            setDetails(response.data)
+            // setDetails(response.data)
             setCarname(response.data.specifications.name)
-            
+            setCarimages([response.data.exterior.image,response.data.interior.image1,response.data.interior.image2])
+            setSpecifications([response.data.specifications.fuel_type,response.data.specifications.engine_cc,response.data.specifications.torque,response.data.specifications.acceleration,response.data.specifications.top_speed,response.data.specifications.variant])
         }
         getdetails();
     },[handle])
-    console.log(details)
+    console.log(specifications)
     
     
   return (
     <div className='details-container'>
-      <div className="details-car-name">{car_name}</div>
       <div className="details-flex-container">
-          <div id='details-inner-flex1'>One</div>
-          <div id='details-inner-flex'>Two</div>
+      <div className="details-car-name">{car_name}</div>
+      </div>
+      <div className="details-flex-container">
+          <div id='details-inner-flex1'><img src={car_images[0]} alt="No-image" /></div>
+          <div id='details-inner-flex'>
+          <div className="details-heading">
+            Car <b>Specifications</b>
+            <Specification specs={specifications} />
+          </div>
+          </div>
       </div> 
  
       <div className="details-flex-container">
-          <div id='details-inner-flex1'>Three</div>
-          <div id='details-inner-flex'>Four</div>
+          <div id='details-inner-flex1'><img src={car_images[1]} alt="No-image" /></div>
+          <div id='details-inner-flex'>
+          <div className="details-heading">
+            <b>Exteriors</b>
+          </div>
+          </div>
       </div> 
 
       <div className="details-flex-container">
-          <div id='details-inner-flex1'>Five</div>
+          <div id='details-inner-flex1'><img src={car_images[2]} alt="No-image" /></div>
           <div id='details-inner-flex'><Link to={{pathname:'/booking', state:{carId: carID.carId}}} >Book Now</Link></div>
       </div>
         

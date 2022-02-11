@@ -8,20 +8,34 @@
 .details-flex-container{
     display: flex;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #details-inner-flex{
     flex-grow: 1;
+    width: 40%;
+    margin-top: 1%;
 }
 
 #details-inner-flex1{
-    flex-grow: 2;
+    flex-grow: 1;
+    width: 60%;
+    margin-top: 3%;
 }
 
 .details-car-name
 {
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 2%;
 
+}
+
+.details-heading{
+        font-size: 1.5em;
+        margin-top: 2%;
+        padding-left: 40%;
+}
+
+#details-inner-flex1 img{
+    width: 40%;
 }

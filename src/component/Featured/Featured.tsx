@@ -30,7 +30,7 @@ const Featured = () => {
            <div>
         <nav>
             <ul className="list-categories">
-                <li className='category-item'><a className='category-link'  >Featured</a></li>
+                <li className='category-item' ><a className='category-link' style={{fontWeight:'bolder'}} >Featured</a></li>
                 <li className='category-item'><a className='category-link' >Just Launched</a></li>
                 <li className='category-item'><a className='category-link'  >Upcoming</a></li>
                 <li className='category-item view-all-button'><Link className='category-link' to={{pathname:'/view-all'}} >View all {'->'}</Link></li>
