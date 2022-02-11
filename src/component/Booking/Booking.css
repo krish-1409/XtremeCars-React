@@ -1,6 +1,6 @@
 .booking-container{
     background-color: black;
-
+    /* height: 50em; */
 }
 
 .booking-flex-container{
@@ -8,6 +8,7 @@
     width: 80%;
     margin: auto;
     display: flex;
+    height: 30em;
 }
 .booking-inner-flex1{
     flex-grow: 1;
@@ -26,13 +27,51 @@
 }
 
 .details-container{
-    border: 1px solid black;
+   
     margin-top: 0;
     width: 85%;
+    padding: 3%;
+    background-color: #F5F5F5;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    border: 1px solid black;
 }
 
 .form-container{
     border: 1px solid black;
     width: 90%;
-    margin: auto;   
+    margin: auto; 
+    background-color: #F5F5F5;  
+    
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
 }
+
+.car-booking-card{
+    border: 1px solid red;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: auto;
+    padding: 1%;
+}
+
+.booking-form{
+    padding: 3%;
+    
+}
+
+.form-heading{
+    width: 95%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+input{
+    /* width: 60%; */
+}
+
+#input-bar{
+    width:60%;
+    font-size: 130%;
+}
+

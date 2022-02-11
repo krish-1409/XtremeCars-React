@@ -64,7 +64,7 @@ const  Booking= () => {
             {specifications[1]}
         </div>
         <br/>
-        <Link to={{pathname:'/details', state:{carId: carID}}} className='book'>View all Details</Link>
+        <Link to={{pathname:'/details', state:{carId: carID}}} className='car-booking-card'>View all Details</Link>
           </div>
         </div>
         <div className='booking-inner-flex2'>
@@ -73,12 +73,12 @@ const  Booking= () => {
             <div className="booking-form">
               <form action="">
               <label htmlFor="cust_name">Name:</label><br/>
-              <input type="text" placeholder='Enter Your Name' name='cust_name' required/><br/><br/>
+              <input id='input-bar' type="text" placeholder='Enter Your Name' name='cust_name' required/><br/><br/>
 
               <label htmlFor="cust_num">Contact Number:</label><br/>
-              <input type="number" placeholder='+91 9999999999' name="cust_num" required/><br/><br/>
+              <input id='input-bar' type="number" placeholder='+91 9999999999' name="cust_num" required/><br/><br/>
                 <label htmlFor="city">Select Your City</label><br/>
-               <select name="city" id="city">
+               <select id='input-bar' name="city" >
 
                  <option value="hyd">Hyderabad</option>
                  <option value="blr">Banglore</option>

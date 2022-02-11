@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Carcard from './Carcard'
-import './Listcars.css'
+
 
 const Listcars = (props:any) => {
  
